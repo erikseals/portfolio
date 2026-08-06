@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Erickson Quintana - Cloud Engineer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__inner">
+      <span class="nav__brand">Erickson Quintana</span>
+      <nav class="nav__links">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero__grid">
+      <div class="hero__content">
+        <p class="hero__badge">&#9729;&#65039; Cloud Engineer</p>
+        <h1>Automatizando infraestructura en AWS con Terraform</h1>
+        <p class="hero__lead">
+          Vengo de administrar infraestructura on-premise con maquinas virtuales,
+          y ahora construyo y automatizo soluciones cloud en AWS.
+        </p>
+
+        <div class="hero__profile">
+          <div class="hero__avatar">EQ</div>
+          <div>
+            <div class="hero__name">Erickson Quintana</div>
+            <div class="hero__title">Cloud Engineer</div>
+          </div>
+        </div>
+
+        <div class="hero__cta">
+          <a href="#proyectos" class="btn btn--green">&#128640; Ver Proyectos</a>
+          <a href="#contacto" class="btn btn--orange">&#9993;&#65039; Contactar</a>
+        </div>
+      </div>
+
+      <div class="hero__panel">
+        <div class="code-card">
+          <div class="code-card__dots"><span></span><span></span><span></span></div>
+          <pre class="code-card__body"><code><span class="tok-kw">class</span> <span class="tok-cls">CloudEngineer</span> {
+  <span class="tok-kw">constructor</span>() {
+    <span class="tok-kw">this</span>.stack = [
+      <span class="tok-str">'AWS'</span>, <span class="tok-str">'Terraform'</span>, <span class="tok-str">'Docker'</span>
+    ];
+    <span class="tok-kw">this</span>.focus = <span class="tok-str">'Infra as Code'</span>;
+  }
+}</code></pre>
+          <div class="code-card__badges">
+            <span class="pill-icon">AWS</span>
+            <span class="pill-icon">TF</span>
+            <span class="pill-icon">DK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos" class="projects">
+    <div class="section__header">
+      <p class="section__eyebrow">Proyectos</p>
+      <h2>Infraestructura desplegada</h2>
+      <p class="section__lead">De servidores on-premise a infraestructura como código en la nube</p>
+    </div>
+
+    <div class="filters" id="filters"></div>
+
+    <div class="projects__grid" id="projects-grid"></div>
+  </section>
+
+  <section id="contacto" class="contact">
+    <div class="section__header">
+      <p class="section__eyebrow">Contacto</p>
+      <h2>Hablemos</h2>
+    </div>
+    <div class="contact__cards">
+      <a class="contact__card" href="mailto:erickson_flelly@hotmail.com">
+        <span class="contact__label">Email</span>
+        <span>erickson_flelly@hotmail.com</span>
+      </a>
+      <a class="contact__card" href="https://www.linkedin.com/in/erickson-eduardo-quintana-silva-a11b41155/" target="_blank" rel="noopener">
+        <span class="contact__label">LinkedIn</span>
+        <span>Ver perfil</span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 Erickson Quintana. Todos los derechos reservados.</p>
+  </footer>
+
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" role="dialog" aria-modal="true">
+      <button class="modal__close" id="modal-close" aria-label="Cerrar">&times;</button>
+      <div class="modal__diagram" id="modal-diagram"></div>
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+      <div class="modal__stack" id="modal-stack"></div>
+      <div class="card__links" id="modal-links"></div>
+    </div>
+  </div>
+
+  <script src="aws-icons.js"></script>
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
